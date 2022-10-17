@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Ch4Challange</string>
+    <string name="text_paper">Kertas</string>
+    <string name="text_scissors">Gunting</string>
+    <string name="text_rock">Batu</string>
+    <string name="player_1">Pemain 1</string>
+    <string name="todo">TODO</string>
+    <string name="text_vs">VS</string>
+    <string name="on_todo">TODO</string>
+    <string name="in_todo">TODO</string>
+    <string name="com">COM</string>
+    <string name="comwin">Pemain 2 MENANG!</string>
+    <string name="draw">DRAW</string>
+    <string name="player1win">Pemain 1 Menang!</string>
+    <string name="text_title_onboarding_1">Bermain suit bersama sesama pemain</string>
+    <string name="text_desc_onboarding_1">This is a suit game vs player</string>
+    <string name="text_title_onboarding_2">Bermain suit melawan komputer</string>
+    <string name="text_desc_onboarding_2">This is a suit game vs komputer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_tiltle_input_name">Tuliskan namamu di bawah</string>
+    <string name="text_hint_name">Name</string>
+    <string name="text_tiltle_menu_game">pilih lawanmu</string>
+    <string name="placeholder_text_menu_vs_player"> %s vs Pemain</string>
+    <string name="placeholder_text_menu_vs_com"> %s vs CPU</string>
+
+</resources>

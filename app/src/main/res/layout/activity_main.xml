@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.game.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_text_paper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:layout_marginTop="10dp"
+        android:rotation="-8"
+        android:text="@string/text_paper"
+        android:textAlignment="center"
+        android:textColor="#FFC107"
+        android:textSize="40sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tv_text_scissor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:rotation="-8"
+        android:text="@string/text_scissors"
+        android:textAlignment="center"
+        android:textColor="#4CAF50"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_text_paper"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tv_text_rock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:rotation="-8"
+        android:text="@string/text_rock"
+        android:textAlignment="center"
+        android:textColor="#9C27B0"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_text_scissor"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tv_player1"
+        android:layout_width="189dp"
+        android:layout_height="30dp"
+        android:fontFamily="casual"
+        android:text="@string/player_1"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_text_rock" />
+    <ImageView
+        android:id="@+id/iv_rock_left"
+        android:src="@drawable/ic_rock"
+        android:background="@drawable/iv_bg_color"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_player1"
+        android:contentDescription="@string/todo" />
+    <ImageView
+        android:id="@+id/iv_paper_left"
+        android:src="@drawable/ic_paper"
+        android:background="@drawable/iv_bg_color"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_rock_left"
+        android:contentDescription="@string/todo" />
+    <ImageView
+        android:id="@+id/iv_scissor_left"
+        android:src="@drawable/ic_scissor"
+        android:background="@drawable/iv_bg_color"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_paper_left"
+        android:contentDescription="@string/todo" />
+    <TextView
+        android:id="@+id/tv_COM"
+        android:layout_width="189dp"
+        android:layout_height="30dp"
+        android:fontFamily="casual"
+        android:text="@string/com"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/tv_player1"
+        app:layout_constraintTop_toBottomOf="@id/tv_text_rock" />
+    <ImageView
+        android:id="@+id/iv_rock_right"
+        android:src="@drawable/ic_rock_com"
+        android:background="@drawable/iv_bg_color"
+        android:layout_marginEnd="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_COM"
+        android:contentDescription="@string/todo" />
+    <ImageView
+        android:id="@+id/iv_paper_right"
+        android:src="@drawable/ic_paper_com"
+        android:background="@drawable/iv_bg_color"
+        android:layout_marginEnd="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_rock_right"
+        android:contentDescription="@string/todo" />
+    <ImageView
+        android:id="@+id/iv_scissor_right"
+        android:src="@drawable/ic_scissor_com"
+        android:background="@drawable/iv_bg_color"
+        android:layout_marginEnd="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_paper_right"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_text_rock"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="@string/text_vs"
+        android:textColor="#EF0655"
+        android:rotation="-8"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/iv_refresh"
+
+        android:src="@drawable/ic_refresh"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/in_todo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
