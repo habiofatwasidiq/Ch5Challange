@@ -7,6 +7,10 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.ch4challange.databinding.ActivityMenuGameBinding
 import com.example.ch4challange.R
 import com.example.ch4challange.ui.game.MainActivity
+import com.example.ch4challange.ui.game.MainActivity.Companion.EXTRAS_MULTIPLAYER_MODE
+import com.example.ch4challange.ui.game.MainActivity.Companion.EXTRAS_PLAYER_NAME
+import com.example.ch4challange.ui.game.MainActivity.Companion.PLAYER_VS_COM
+import com.example.ch4challange.ui.game.MainActivity.Companion.PLAYER_VS_PLAYER
 
 class MenuGameActivity : AppCompatActivity() {
 
@@ -27,12 +31,20 @@ class MenuGameActivity : AppCompatActivity() {
 
     private fun setMenuClickListeners() {
         binding.ivVsPlayer.setOnClickListener {
-            MainActivity.startActivity(this,false)
+            navigateToGame(mode = PLAYER_VS_PLAYER)
         }
         binding.ivVsCom.setOnClickListener {
-            MainActivity.startActivity(this,true)
+            navigateToGame(mode = PLAYER_VS_COM)
         }
     }
+    private fun navigateToGame(mode: Int) {
+        val intent = Intent(this, MainActivity::class.java).apply {
+            putExtra(EXTRAS_PLAYER_NAME, name)
+            putExtra(EXTRAS_MULTIPLAYER_MODE, mode)
+        }
+        startActivity(intent)
+    }
+
 
     private fun setNameOnTitle() {
         binding.tvTextMenuVsPlayer.text = getString(R.string.placeholder_text_menu_vs_player, name)

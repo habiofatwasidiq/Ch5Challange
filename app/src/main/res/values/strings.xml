@@ -8,7 +8,7 @@
     <string name="text_vs">VS</string>
     <string name="on_todo">TODO</string>
     <string name="in_todo">TODO</string>
-    <string name="com">COM</string>
+    <string name="com">Pemain 2</string>
     <string name="comwin">Pemain 2 MENANG!</string>
     <string name="draw">DRAW</string>
     <string name="player1win">Pemain 1 Menang!</string>
@@ -23,5 +23,11 @@
     <string name="text_tiltle_menu_game">pilih lawanmu</string>
     <string name="placeholder_text_menu_vs_player"> %s vs Pemain</string>
     <string name="placeholder_text_menu_vs_com"> %s vs CPU</string>
+    <string name="text_lock_player1">LOCK</string>
+    <string name="text_lock_player2">LOCK</string>
+    <string name="text_result_menu_dialog">Hasil Permainan</string>
+    <string name="text_player_won_menu_dialog">Player Won</string>
+    <string name="text_back_to_menu_dialog">Kembali Ke Menu</string>
+    <string name="text_play_again_menu_dialog">Main Lagi</string>
 
 </resources>
